@@ -18,6 +18,11 @@ dependencies:
     specifier: ^4.1.11
     version: 4.1.11
 
+devDependencies:
+  '@types/gsap':
+    specifier: ^3.0.0
+    version: 3.0.0
+
 packages:
 
   /@ampproject/remapping@2.3.0:
@@ -980,6 +985,13 @@ packages:
       '@types/node': 24.0.13
     dev: false
 
+  /@types/gsap@3.0.0:
+    resolution: {integrity: sha512-BbWLi4WRHGze4C8NV7U7yRevuBFiPkPZZyGa0rryanvh/9HPUFXTNBXsGQxJZJq7Ix7j4RXMYodP3s+OsqCErg==}
+    deprecated: This is a stub types definition. gsap provides its own type definitions, so you do not need this installed.
+    dependencies:
+      gsap: 3.13.0
+    dev: true
+
   /@types/hast@3.0.4:
     resolution: {integrity: sha512-WPs+bbQw5aCj+x6laNGWLH3wviHtoCv/P3+otBhbOhJgG8qtpdAMlTCxLtsTWA7LH1Oh/bFCHsBn0TPS5m30EQ==}
     dependencies:
@@ -1564,7 +1576,6 @@ packages:
 
   /gsap@3.13.0:
     resolution: {integrity: sha512-QL7MJ2WMjm1PHWsoFrAQH/J8wUeqZvMtHO58qdekHpCfhvhSL4gSiz6vJf5EeMP0LOn3ZCprL2ki/gjED8ghVw==}
-    dev: false
 
   /h3@1.15.3:
     resolution: {integrity: sha512-z6GknHqyX0h9aQaTx22VZDf6QyZn+0Nh+Ym8O/u0SGSkyF5cuTJYKlc8MkzW3Nzf9LE1ivcpmYC3FUGpywhuUQ==}

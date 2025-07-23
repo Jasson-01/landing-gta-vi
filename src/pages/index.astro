@@ -1,10 +1,11 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import HeroKeyLogo from "@/assets/hero-key-logo.webp";
-import HeroKeyBackground from "@/assets/hero-key-background.webp";
-import LogoVI from "@/assets/logo-vi.svg";
-import PlayButtonIcon from "@/assets/play-button.svg";
-import LogoCutted from "@/assets/logo-cutted.svg";
+import Layout from "@/layouts/Layout.astro"
+
+import HeroKeyLogo from "@/assets/hero-key-logo.webp"
+import HeroKeyBackground from "@/assets/hero-key-background.webp"
+import LogoVI from "@/assets/logo-vi.svg"
+import PlayButtonIcon from "@/assets/play-button.svg"
+import LogoCutted from "@/assets/logo-cutted.svg"
 ---
 
 <Layout>
@@ -36,10 +37,11 @@ import LogoCutted from "@/assets/logo-cutted.svg";
         class="size-11 text-white hover:text-yellow-100 transition-colors duration-500 cursor-pointer"
       />
     </header>
+
     <button class="absolute inset-0 m-auto cursor-pointer inline-block">
       <PlayButtonIcon
         id="hero-play-button"
-        class="text-white m-auto size-29 mt-10 backdrop-blur-3xl rounded-full hover:scale-110 transition-transform duration-500"
+        class="text-white m-auto size-32 mt-10 backdrop-blur-3xl rounded-full hover:scale-110 transition-transform duration-500"
       />
     </button>
 
@@ -48,11 +50,10 @@ import LogoCutted from "@/assets/logo-cutted.svg";
         class="text-white w-38 drop-shadow-[0_0_2px_rgba(255,255,255,.5),0_0_8px_#000]"
       />
       <span
-        class="absolute uppercase tracking-[6px] whitespace-nowrap text-center top-[51px] font-medium
-      text-shadow-[0_0_2px_rgba(255,255,255,.5),0_0_8px_#000] left-1/2 -translate-x-1/2 text-lg"
+        class="absolute uppercase tracking-[6px] whitespace-nowrap text-center top-[49px] font-medium text-shadow-[0_0_2px_rgba(255,255,255,.5),0_0_8px_#000] left-1/2 -translate-x-1/2 text-lg"
       >
-        Ver el tráiler 2</span
-      >
+        Ver el Tráiler 2
+      </span>
     </footer>
   </div>
 </Layout>
@@ -60,25 +61,25 @@ import LogoCutted from "@/assets/logo-cutted.svg";
 <style>
   #logo-mask {
     background: white;
-    mask-image: url("/logo-s tack.svg");
+    mask-image: url("/logo-stack.svg");
     mask-position: center 25%;
     mask-repeat: no-repeat;
-    mask-size: clam(5000vh, 3500%, 0vh);
+    mask-size: clamp(5000vh, 3500%, 0vh);
   }
 </style>
 
 <script>
-  import { gsap } from "gsap";
-  import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-  gsap.registerPlugin(ScrollTrigger);
+  import { gsap } from "gsap"
+  import { ScrollTrigger } from "gsap/ScrollTrigger"
+  
+  gsap.registerPlugin(ScrollTrigger)
 
   const tl = gsap.timeline({
     ease: "power2.out",
     scrollTrigger: {
       scrub: 1,
     },
-  });
+  })
 
   tl.to("#hero-key", { duration: 1, scale: 1 })
     .to("#hero-key-logo", { opacity: 0 }, "<")

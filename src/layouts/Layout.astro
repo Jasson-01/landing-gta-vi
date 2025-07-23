@@ -1,5 +1,5 @@
 ---
-import KeepScrolling from "@/assets/keep-scrolling.svg";
+import KeepScrolling from "@/assets/keep-scrolling.svg"
 ---
 
 <!doctype html>
@@ -8,7 +8,7 @@ import KeepScrolling from "@/assets/keep-scrolling.svg";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Landing-GTA-Json</title>
+    <title>Landing-GTA-IV</title>
   </head>
   <body>
     <slot />
@@ -23,7 +23,7 @@ import KeepScrolling from "@/assets/keep-scrolling.svg";
 
   @theme {
     --font-sans: "GTA", system-ui, sans-serif;
-    --font-narrow: "GTA Narrow", system-ui, sans-serif;
+    --font-narrow: "GTANarrow", system-ui, sans-serif;
 
     --animate-bounce-pulse: bounce-pulse 2s ease-in-out infinite;
   }
@@ -34,11 +34,13 @@ import KeepScrolling from "@/assets/keep-scrolling.svg";
       scale: 0.8;
       opacity: 0.8;
     }
+
     50% {
       transform: translateY(-5px);
-      scale: 1;
       opacity: 1;
+      scale: 1;
     }
+
     100% {
       transform: translateY(0);
       scale: 0.8;
@@ -72,9 +74,10 @@ import KeepScrolling from "@/assets/keep-scrolling.svg";
     font-style: normal;
     font-display: swap;
   }
+
   @font-face {
     font-family: GTA;
-    src: url("/fonts/gta-bold.woff") format("woff");
+    src: url("/fonts/gta-semibold.woff") format("woff");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
